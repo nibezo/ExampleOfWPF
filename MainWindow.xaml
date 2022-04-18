@@ -1,0 +1,28 @@
+﻿<Window x:Class="ExampleOfWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExampleOfWPF"
+        mc:Ignorable="d"
+        Title="Calculator" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBox x:Name="InputOne" Grid.Row="0" Grid.Column="1" Margin="50" VerticalAlignment="Top"></TextBox>
+        <TextBox x:Name="InputTwo" Grid.Row="0" Grid.Column="1" Margin="50" VerticalAlignment="Bottom"></TextBox>
+        
+        <Button x:Name="Sum" Content="Message" FontSize="50px" Grid.Column="1" Grid.Row="1" Click="Sum_Click"/>
+        <TextBlock x:Name="Output" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px"></TextBlock>
+    </Grid>
+</Window>
