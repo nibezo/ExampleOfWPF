@@ -23,6 +23,6 @@
         <TextBox x:Name="InputTwo" Grid.Row="0" Grid.Column="1" Margin="45" Height="30" VerticalAlignment="Bottom"></TextBox>
         
         <Button x:Name="Sum" Content="Calc" FontSize="50px" Grid.Column="1" Grid.Row="1" Margin="20" Click="Sum_Click"/>
-        <TextBlock x:Name="Output" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="17" />
+        <TextBlock x:Name="Output" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="50" />
     </Grid>
 </Window>

@@ -26,12 +26,15 @@ namespace ExampleOfWPF
         }
 
         private void Sum_Click(object sender, RoutedEventArgs e)
-        { 
-            decimal a = Convert.ToDecimal(InputOne.Text);
-            decimal b = Convert.ToDecimal(InputTwo.Text);
-            decimal sum = a + b;
+        {
+            try
+            {
+                decimal a = Convert.ToDecimal(InputOne.Text);
+                decimal b = Convert.ToDecimal(InputTwo.Text);
+                decimal sum = a + b;
 
-            Output.Text = Convert.ToString(sum);
+                Output.Text = Convert.ToString(sum);
+            } catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
     }
 }
