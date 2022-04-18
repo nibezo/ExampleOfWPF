@@ -19,10 +19,10 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <TextBox x:Name="InputOne" Grid.Row="0" Grid.Column="1" Margin="50" VerticalAlignment="Top"></TextBox>
-        <TextBox x:Name="InputTwo" Grid.Row="0" Grid.Column="1" Margin="50" VerticalAlignment="Bottom"></TextBox>
+        <TextBox x:Name="InputOne" Grid.Row="0" Grid.Column="1" Margin="45" Height="30" VerticalAlignment="Top"></TextBox>
+        <TextBox x:Name="InputTwo" Grid.Row="0" Grid.Column="1" Margin="45" Height="30" VerticalAlignment="Bottom"></TextBox>
         
-        <Button x:Name="Sum" Content="Message" FontSize="50px" Grid.Column="1" Grid.Row="1" Click="Sum_Click"/>
-        <TextBlock x:Name="Output" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16px"></TextBlock>
+        <Button x:Name="Sum" Content="Calc" FontSize="50px" Grid.Column="1" Grid.Row="1" Margin="20" Click="Sum_Click"/>
+        <TextBlock x:Name="Output" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="17" />
     </Grid>
 </Window>
